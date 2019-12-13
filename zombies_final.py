@@ -1,6 +1,7 @@
 """
 
 by TeamCoder | Bielefeld
+Special Thanks to Danny
 
 """
 
@@ -44,7 +45,7 @@ def check_human(x, y):
     return is_human, is_visible
 
 # Generation of the matrix
-def generate_matrix():
+def generate_matrix():  #Generate Map
     global MAP, ENC_HUMAN, ENC_ZOMBIE, ENC_NULL
     MAP = []
     for i in range(SIZE[0]):
@@ -85,7 +86,7 @@ def check_state(PRINT=True, all_=True):
         print('\n')
     
 
-def zombie_step():
+def zombie_step():  #Zombies: Infect
     global MAP
     places_to_infect = []
     for x in range(SIZE[0]):
@@ -108,7 +109,7 @@ def zombie_step():
                     MAP[choice[0]][choice[1]] = ENC_ZOMBIE[1]
 
 
-def go():
+def go():   #Zombies: Go
     global MAP
     for x in range(SIZE[0]):
         for y in range(SIZE[1]):
@@ -167,7 +168,7 @@ def update_visible():
                  #   MAP[x][y] = 0
             
         
-def zombies_eat():
+def zombies_eat():  #Zombies: Eat
     global MAP
     places_to_eat = []
     for x in range(SIZE[0]):
@@ -191,7 +192,7 @@ def zombies_eat():
                     MAP[x][y] = ENC_ZOMBIE[1]
 
 
-def visualize(mysize=2):
+def visualize(mysize=2):    #map
     turtle.speed(0)
     turtle.tracer(0, 0)
     turtle.goto(-150, 150)
