@@ -1,3 +1,9 @@
+"""
+
+by TeamCoder | Bielefeld
+
+"""
+
 import random
 from array import *
 from time import sleep
