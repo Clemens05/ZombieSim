@@ -4,7 +4,7 @@ by TeamCoder
 
 Special Thanks to Danny
 
-Zombie German: Dies ist eine Simulation, die simuliert, was passiert, wenn in einer 45.000 Einwohner Stadt ein Zombie entsteht und er 
+German: Dies ist eine Simulation, die simuliert, was passiert, wenn in einer 45.000 Einwohner Stadt ein Zombie entsteht und er 
 andere ansteckt. Ein Zombie lebt 6 Tage. Menschen können sich 2-8 Tage verstecken. Zombies können pro Tag 5x gehen (zufällig) und 
 5x infizieren (zufällig). Alle 100 Tage wird die Map aktualisiert. 
 Leeres Feld: 0/Schwarz; Feld mit Mensch: 1/Blau; Feld mit Zombie: 2/Grün
